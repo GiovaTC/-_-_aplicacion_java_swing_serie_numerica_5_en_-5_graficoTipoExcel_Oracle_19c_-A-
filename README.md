@@ -1,7 +1,9 @@
 # -_-_aplicacion_java_swing_serie_numerica_5_en_-5_graficoTipoExcel_Oracle_19c_-A- :.
 # 📊 Aplicación Java Swing – Serie Numérica 5 en 5 + Gráfico Tipo Excel + Oracle 19c .
 
-<img width="350" height="120" alt="image" src="https://github.com/user-attachments/assets/8a9e53b4-6c70-4088-885b-74ddc71f19b9" />      
+<img width="350" height="120" alt="image" src="https://github.com/user-attachments/assets/8a9e53b4-6c70-4088-885b-74ddc71f19b9" />    
+
+<img width="2554" height="1079" alt="image" src="https://github.com/user-attachments/assets/b350fd17-1a56-41b3-8e8a-92f697b20eda" />    
 
 **Solución completa, profesional y lista para ejecutar en IntelliJ IDEA**
 
