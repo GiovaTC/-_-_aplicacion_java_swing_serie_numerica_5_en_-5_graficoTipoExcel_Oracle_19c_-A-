@@ -54,15 +54,38 @@ public class GraficoEstadistico extends JFrame {
         }
     }
 
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        if (datos.isEmpty()) {
+            return;
         }
+
+        Graphics2D g2 = (Graphics2D) g;
+        g2.setColor(Color.BLUE);
+
+        int x = 80;
+        int base = 400;
+
+        for (Integer valor : datos) {
+            int altura = valor * 3 ;
+            g2.fillRect(x, base - altura, 30, altura);
+            g2.drawString(String.valueOf(valor), x, base + 20);
+            x += 40;
+        }
+
+        g2.drawString("Grafico Tipo Excel - Serie 5 en 5", 230, 80);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> new GraficoEstadistico().setVisible(true));
     }
 }
+/*© 2025 Giovanny Alejandro Tapiero Cataño & chatGpt :. .
+Todos los derechos reservados.
+
+Este software y su contenido están protegidos por las leyes internacionales de derechos de autor.
+No se permite su reproducción, distribución, modificación ni uso con fines comerciales sin
+autorización expresa del titular.
+--- :. . */
